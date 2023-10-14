@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/notes.css">
+    <link rel="icon" type="image/x-icon" href="img/PTU STUDY 3.png">
+    <title>Ptu Study Zone | Notes</title>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const semLinks = document.querySelectorAll(".sem");
+        semLinks.forEach(function(link) {
+          link.addEventListener("click", function(event) {
+            event.preventDefault();
+    
+            const targetId = this.getAttribute("href").substring(1); // Get the target ID
+            const targetElement = document.getElementById(targetId);
+    
+            if (targetElement) {
+              window.scrollTo({
+                top: targetElement.offsetTop -100 , // Adjust the offset as needed
+                behavior: "smooth"
+              });
+            }
+          });
+        });
+      });
+    </script>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">PTU STUDY ZONE</a>
+    
+        <nav class="navbar">
+          <a href="index.html" style="--i: 1" class="action">Home</a>
+          <a href="about.html" style="--i: 2">About</a>
+          <a href="notes.html" style="--i: 3">Notes</a>
+          <a href="pyq.html" style="--i: 4">PYQ</a>
+          <a href="syallbus.html" style="--i: 5">Syllabus</a>
+          <a href="contact.html" style="--i: 6">Contact Us</a>
+        </nav>
+      </header>
+
+      <!-- Notes Section -->
+      <main>
+        <div class="notehead">Notes</div>
+        <br><br><br>
+        <div class="selectbox">
+          <div href="#sem1" class="sem">Semester 1</div>
+          <div href="#sem2" class="sem">Semester 2</div>
+          <div href="#sem3" class="sem">Semester 3</div>
+          <div href="#sem4" class="sem">Semester 4</div>
+          <div href="#sem5" class="sem">Semester 5</div>
+          <div href="#sem6" class="sem">Semester 6</div>
+          <div href="#sem7" class="sem">Semester 7</div>
+          <div href="#sem8" class="sem">Semester 8</div>
+        </div>
+        <h2 id="sem1">Semester - 1</h2>
+        <br><br><br>    
+        <hr>
+        <div class="notes-container">
+            <section class="note">
+                <h3>Mathematics - 1</h3>
+                <p>Subject Code - BTAM101-23 </p>
+                <a href="note1.pdf" download class="download-button">Download PDF</a>
+            </section>
+            <section class="note">
+                <h3>Physics</h3>
+                <p>Subject Code - BTPH101-23</p>
+                <a href="note2.pdf" download class="download-button">Download PDF</a>
+            </section>
+            <section class="note">
+                <h3>EGD</h3>
+                <p>Subject Code - BTME101-21</p>
+                <a href="note3.pdf" download class="download-button">Download PDF</a>
+            </section>
+            <section class="note">
+              <h3>BEE</h3>
+              <p>Subject Code - BTEE101-18</p>
+              <a href="note4.pdf" download class="download-button">Download PDF</a>
+          </section>
+        </div>
+
+        <h2 id="sem2">Semester - 2</h2>
+        <br><br><br>  
+        <hr>
+        <div class="notes-container">
+            <section class="note">
+                <h3>Mathematics - 2</h3>
+                <p>Subject Code - BTAM201-23</p>
+                <a href="note1.pdf" download class="download-button">Download PDF</a>
+            </section>
+            <section class="note">
+                <h3>Chemistry</h3>
+                <p>Subject Code - BTCH101-23</p>
+                <a href="note2.pdf" download class="download-button">Download PDF</a>
+            </section>
+            <section class="note">
+                <h3>PPS</h3>
+                <p>Subject Code - BTPS101-18</p>
+                <a href="note3.pdf" download class="download-button">Download PDF</a>
+            </section>
+            <section class="note">
+              <h3>English</h3>
+              <p>Subject Code - BTHU101-18</p>
+              <a href="note4.pdf" download class="download-button">Download PDF</a>
+          </section>
+      </div>
+
+    </main>
+
+  </section>
+  <div class="last-text">
+    <p>Copyright &copy; All Rights Reserved</p>
+  </div>
+  <a href="#" class="top"><i class="bx bx-up-arrow-alt"></i></a>
+</body>
+</html>
